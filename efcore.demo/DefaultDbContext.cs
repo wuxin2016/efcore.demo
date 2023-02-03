@@ -10,7 +10,7 @@ public class DefaultDbContext : DbContext
     // password=fangte123";
     
     private readonly string connectionString = @"Server=10.98.98.183;port=3306;database=testdemo;user id=root;
-    password=fangte123";
+    password=123456";
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
