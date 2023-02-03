@@ -26,7 +26,7 @@ using (var db = new DefaultDbContext())
     };
     await db.AppLoginLogs.AddRangeAsync(insertLogs);
     await db.SaveChangesAsync();
-    // end Init Data
+    // end 
 
     // first query count
     var count = await db.AppLoginLogs.CountAsync(x => x.UserId == 1 && x.CreationTime >= DateTime.Now.AddDays(-10) &&
